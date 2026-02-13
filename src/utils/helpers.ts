@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 /**
  * Validate file type
  */
@@ -20,10 +22,10 @@ export const formatFileSize = (bytes: number): string => {
 };
 
 /**
- * Generate unique ID
+ * Generate unique ID using crypto
  */
 export const generateId = (prefix: string = ''): string => {
-  const timestamp = Date.now();
-  const random = Math.random().toString(36).substring(7);
-  return `${prefix}${timestamp}_${random}`;
+  const randomBytes = crypto.randomBytes(16).toString('hex');
+  const timestamp = Date.now().toString(36);
+  return `${prefix}${timestamp}-${randomBytes}`;
 };

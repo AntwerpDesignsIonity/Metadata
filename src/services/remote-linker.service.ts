@@ -1,4 +1,5 @@
 import { RemoteLink } from '../models/link.model';
+import { generateId } from '../utils/helpers';
 
 /**
  * Service for managing remote system links
@@ -10,7 +11,7 @@ export class RemoteLinkerService {
    * Add a new remote link
    */
   async addLink(linkData: Omit<RemoteLink, 'id' | 'createdAt' | 'updatedAt'>): Promise<RemoteLink> {
-    const id = this.generateLinkId();
+    const id = generateId('link_');
     
     const link: RemoteLink = {
       id,
@@ -33,7 +34,7 @@ export class RemoteLinkerService {
   /**
    * Update a remote link
    */
-  async updateLink(linkId: string, updates: Partial<RemoteLink>): Promise<RemoteLink | undefined> {
+  async updateLink(linkId: string, updates: Omit<Partial<RemoteLink>, 'id' | 'createdAt'>): Promise<RemoteLink | undefined> {
     const link = this.links.get(linkId);
     
     if (!link) {
@@ -44,6 +45,7 @@ export class RemoteLinkerService {
       ...link,
       ...updates,
       id: linkId,
+      createdAt: link.createdAt,
       updatedAt: new Date()
     };
 
@@ -56,12 +58,5 @@ export class RemoteLinkerService {
    */
   async deleteLink(linkId: string): Promise<boolean> {
     return this.links.delete(linkId);
-  }
-
-  /**
-   * Generate a unique link ID
-   */
-  private generateLinkId(): string {
-    return `link_${Date.now()}_${Math.random().toString(36).substring(7)}`;
   }
 }

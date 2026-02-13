@@ -7,6 +7,11 @@ describe('MetadataRemovalService', () => {
     service = new MetadataRemovalService();
   });
 
+  afterEach(() => {
+    // Clear service state for test isolation
+    service = null as unknown as MetadataRemovalService;
+  });
+
   test('should remove metadata from a file', async () => {
     const fileData = 'sample file data';
     const fileName = 'test.jpg';

@@ -1,4 +1,5 @@
 import { MetadataResult } from '../models/metadata.model';
+import { generateId } from '../utils/helpers';
 
 /**
  * Service for handling metadata removal operations
@@ -10,7 +11,7 @@ export class MetadataRemovalService {
    * Remove metadata from a file
    */
   async removeMetadata(fileData: string, fileName: string): Promise<MetadataResult> {
-    const fileId = this.generateFileId();
+    const fileId = generateId('file_');
     
     const result: MetadataResult = {
       fileId,
@@ -47,12 +48,5 @@ export class MetadataRemovalService {
    */
   async getResult(fileId: string): Promise<MetadataResult | undefined> {
     return this.results.get(fileId);
-  }
-
-  /**
-   * Generate a unique file ID
-   */
-  private generateFileId(): string {
-    return `file_${Date.now()}_${Math.random().toString(36).substring(7)}`;
   }
 }

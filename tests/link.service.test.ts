@@ -7,6 +7,11 @@ describe('RemoteLinkerService', () => {
     service = new RemoteLinkerService();
   });
 
+  afterEach(() => {
+    // Clear service state for test isolation
+    service = null as unknown as RemoteLinkerService;
+  });
+
   test('should add a remote link', async () => {
     const linkData = {
       url: 'https://example.com/api',
