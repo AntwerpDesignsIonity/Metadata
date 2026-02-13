@@ -6,7 +6,7 @@ export interface RemoteLink {
   url: string;
   type: 'storage' | 'cdn' | 'api' | 'other';
   metadata?: {
-    [key: string]: any;
+    [key: string]: string | number | boolean | null;
   };
   createdAt: Date;
   updatedAt: Date;
@@ -19,6 +19,6 @@ export interface CreateLinkRequest {
   url: string;
   type: 'storage' | 'cdn' | 'api' | 'other';
   metadata?: {
-    [key: string]: any;
+    [key: string]: string | number | boolean | null;
   };
 }
