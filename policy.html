@@ -70,7 +70,7 @@
       opacity: 0.4;
     }
 
-    header, nav, main, footer {
+    header, main, footer {
       position: relative;
       z-index: 1;
     }
@@ -117,43 +117,6 @@
       height: auto;
       margin-bottom: 1rem;
       display: inline-block;
-    }
-
-    /* Navigation */
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      flex-wrap: wrap;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      align-items: center;
-    }
-
-    nav .nav-heading {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin: 0 0 0.5rem 0;
-      padding: 0.4rem 0;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      padding: 0.4rem 1rem;
-      border-radius: var(--radius);
-      font-size: 0.9rem;
-      transition: background 0.2s;
-    }
-
-    nav a:hover, nav a.active {
-      background: var(--accent);
-      color: var(--primary);
     }
 
     /* Main */
@@ -259,16 +222,6 @@
       &nbsp;·&nbsp; &copy; 2026 Johan Wilhelm van Antwerp
     </div>
   </header>
-
-  <nav>
-    <h2 class="nav-heading">Navigation</h2>
-    <a href="index.html">Home</a>
-    <a href="policy.html" class="active">Policy</a>
-    <a href="license.html">License</a>
-    <a href="README.md" target="_blank">Documentation</a>
-    <a href="https://github.com/AntwerpDesignsIonity/Metadata" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://github.com/AntwerpDesignsIonity/Metadata/wiki/META-DATA-Complete" target="_blank" rel="noopener">Wiki</a>
-  </nav>
 
   <main>
     <div class="policy-box">

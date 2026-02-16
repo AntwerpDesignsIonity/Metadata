@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gateway — Ionity Today</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Ionity Today - Gateway to Global IoT, AI, Network and IT solutions.">
+  <meta name="author" content="Johan Wilhelm van Antwerp">
+  <meta name="keywords" content="Ionity Today, Ionity World, IoT, AI, Network, IT, Gateway">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Gateway — Ionity Today">
+  <meta property="og:description" content="Gateway to Ionity Today services and solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ionity.today/gateway">
+  <meta property="og:image" content="assets/Images/ionity-social-card.png">
+  <meta property="og:site_name" content="Ionity Today">
+  <meta property="article:author" content="Johan Wilhelm van Antwerp">
+
+  <!-- Favicon & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Images/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/Images/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00c6ff">
+
+  <style>
+    :root {
+      --primary: #0d1b2a;
+      --accent: #00c6ff;
+      --accent-alt: #0072ff;
+      --surface: #1b2838;
+      --surface-hover: #233347;
+      --text: #e0e6ed;
+      --text-muted: #8899aa;
+      --border: #2a3a4a;
+      --radius: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* Backdrop Pattern */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(45deg, rgba(0, 198, 255, 0.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 198, 255, 0.03) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0, 198, 255, 0.03) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0, 198, 255, 0.03) 75%);
+      background-size: 60px 60px;
+      background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    header, main, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--surface) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    header .meta {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    header .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header .meta a:hover { text-decoration: underline; }
+
+    /* Header Logo */
+    header .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    /* Main */
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      width: 100%;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    main p {
+      margin-bottom: 1rem;
+    }
+
+    main section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    main a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    main a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* Footer Logo */
+    footer .footer-logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+      display: inline-block;
+      opacity: 0.9;
+    }
+
+    footer .footer-logo:hover {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.6rem; }
+      main h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/Images/-transparrent-ionity-logo-edited - Copy.svg" alt="Ionity Today Logo" class="logo">
+    <h1>Ionity Today</h1>
+    <p>Gateway to Global IoT, AI, Network & IT Solutions</p>
+    <div class="meta">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener">ionity.today</a>
+      &nbsp;·&nbsp; &copy; 2018–2026 Johan Wilhelm van Antwerp
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to Ionity Today</h2>
+      <p>Ionity Today is the central hub for global IoT, AI, Network, and IT solutions. This gateway provides access to our comprehensive ecosystem of services, assets, and resources.</p>
+    </section>
+
+    <section>
+      <h2>Quick Links</h2>
+      <p>
+        <a href="index.html">Asset Library</a> — Browse and download brand assets, logos, and icons<br>
+        <a href="policy.html">Policy AED 986</a> — Official governance and usage terms<br>
+        <a href="license.html">License AED 900</a> — MIT License for software and documentation<br>
+        <a href="https://www.ionity.world" target="_blank" rel="noopener">Ionity World</a> — Professional profile and portfolio
+      </p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>Founded in 2018, Ionity Today serves as the primary digital presence for Ionity solutions worldwide. We provide cutting-edge technology infrastructure, IoT integration, AI-powered solutions, and comprehensive IT services.</p>
+      <p>Directed by Johan Wilhelm van Antwerp, our mission is to deliver innovative, scalable, and reliable technology solutions for a connected world.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.ionity.today" target="_blank" rel="noopener">
+      <img src="assets/Images/-transparrent-ionity-logo-edited - Copy.svg" alt="Ionity Today Logo" class="footer-logo">
+    </a>
+    <p>&copy; 2018–2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
+    <p style="margin-top:0.4rem;">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener" aria-label="Visit ionity.today website (opens in new tab)">www.ionity.today</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.ionity.world" target="_blank" rel="noopener" aria-label="Visit ionity.world profile (opens in new tab)">www.ionity.world</a>
+      &nbsp;·&nbsp;
+      <a href="policy.html">Policy AED 986</a>
+      &nbsp;·&nbsp;
+      <a href="license.html">License AED 900</a>
+    </p>
+  </footer>
+
+</body>
+</html>
