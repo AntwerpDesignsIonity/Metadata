@@ -640,11 +640,11 @@
 
         // Toggle sections
         document.getElementById('images-section').style.display =
-          currentFilter === 'files' || currentFilter === 'metadata' ? 'none' : '';
+          currentFilter === 'files' || currentFilter === 'metadata' ? 'none' : 'block';
         document.getElementById('files-section').style.display =
-          currentFilter === 'files' || currentFilter === 'all' ? '' : 'none';
+          currentFilter === 'files' || currentFilter === 'all' ? 'block' : 'none';
         document.getElementById('metadata-section').style.display =
-          currentFilter === 'metadata' ? '' : 'none';
+          currentFilter === 'metadata' ? 'block' : 'none';
 
         renderCards(currentFilter, searchInput.value.trim().toLowerCase());
       });
