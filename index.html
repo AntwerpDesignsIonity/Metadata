@@ -312,12 +312,134 @@
       .asset-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
       .asset-card .preview { height: 100px; }
     }
+
+    /* Metadata Section */
+    #metadata-section {
+      display: none;
+    }
+
+    .metadata-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .metadata-tabs button {
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      margin-bottom: -2px;
+    }
+
+    .metadata-tabs button:hover {
+      color: var(--accent);
+    }
+
+    .metadata-tabs button.active {
+      border-bottom-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .metadata-content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
+    .metadata-content h1,
+    .metadata-content h2,
+    .metadata-content h3 {
+      color: var(--accent);
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .metadata-content h1:first-child,
+    .metadata-content h2:first-child,
+    .metadata-content h3:first-child {
+      margin-top: 0;
+    }
+
+    .metadata-content p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .metadata-content code {
+      background: var(--primary);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+
+    .metadata-content pre {
+      background: var(--primary);
+      padding: 1rem;
+      border-radius: var(--radius);
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    .metadata-content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    .metadata-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .metadata-content th,
+    .metadata-content td {
+      padding: 0.6rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .metadata-content th {
+      background: var(--primary);
+      font-weight: 600;
+    }
+
+    .metadata-content a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .metadata-content a:hover {
+      text-decoration: underline;
+    }
+
+    .metadata-content ul,
+    .metadata-content ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .metadata-content li {
+      margin-bottom: 0.4rem;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Ionity Today</h1>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+      <img src="assets/Images/-transparrent-ionity-logo-edited - Copy.svg" alt="Ionity Logo" style="height: 80px; max-width: 200px; object-fit: contain;">
+      <h1 style="margin: 0;">Ionity Today</h1>
+    </div>
     <p>Global IoT, AI, Network &amp; IT — Asset Library</p>
     <div class="meta">
       <a href="https://www.ionity.today" target="_blank" rel="noopener">ionity.today</a>
@@ -331,6 +453,7 @@
     <a href="#svg" data-filter="svg">SVG</a>
     <a href="#jpeg" data-filter="jpeg">JPEG</a>
     <a href="#files" data-filter="files">Other Files</a>
+    <a href="#metadata" data-filter="metadata">Metadata</a>
   </nav>
 
   <main>
@@ -362,6 +485,18 @@
           <a href="ionity.today.xmp" target="_blank">View</a>
         </li>
       </ul>
+    </section>
+
+    <!-- Metadata Section -->
+    <section id="metadata-section">
+      <h2>Documentation & Metadata</h2>
+      <div class="metadata-tabs">
+        <button class="metadata-tab active" data-tab="readme">README</button>
+        <button class="metadata-tab" data-tab="metadata-doc">Metadata Info</button>
+      </div>
+      <div class="metadata-content" id="metadata-content">
+        <!-- Content will be loaded here -->
+      </div>
     </section>
 
   </main>
@@ -505,9 +640,11 @@
 
         // Toggle sections
         document.getElementById('images-section').style.display =
-          currentFilter === 'files' ? 'none' : '';
+          currentFilter === 'files' || currentFilter === 'metadata' ? 'none' : '';
         document.getElementById('files-section').style.display =
           currentFilter === 'files' || currentFilter === 'all' ? '' : 'none';
+        document.getElementById('metadata-section').style.display =
+          currentFilter === 'metadata' ? '' : 'none';
 
         renderCards(currentFilter, searchInput.value.trim().toLowerCase());
       });
@@ -523,6 +660,136 @@
 
     // Initial render
     renderCards('all', '');
+
+    // ─── Metadata Tab Handling ────────────────────────────────────────
+    const metadataContent = document.getElementById('metadata-content');
+    let metadataCache = {};
+
+    // Simple markdown-to-HTML converter for basic formatting
+    function simpleMarkdownToHTML(markdown) {
+      let html = markdown;
+      
+      // Code blocks
+      html = html.replace(/```(\w+)?\n([\s\S]*?)```/g, '<pre><code>$2</code></pre>');
+      
+      // Headers
+      html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+      html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+      html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+      
+      // Bold
+      html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      
+      // Italic
+      html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+      
+      // Links
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+      
+      // Inline code
+      html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+      
+      // Tables (basic)
+      const lines = html.split('\n');
+      let inTable = false;
+      let result = [];
+      
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        if (line.trim().startsWith('|')) {
+          if (!inTable) {
+            result.push('<table>');
+            inTable = true;
+          }
+          
+          const cells = line.split('|').filter(c => c.trim());
+          const isHeader = i < lines.length - 1 && lines[i + 1].includes('---');
+          
+          if (isHeader) {
+            result.push('<thead><tr>');
+            cells.forEach(cell => result.push(`<th>${cell.trim()}</th>`));
+            result.push('</tr></thead><tbody>');
+          } else if (!lines[i].includes('---')) {
+            result.push('<tr>');
+            cells.forEach(cell => result.push(`<td>${cell.trim()}</td>`));
+            result.push('</tr>');
+          }
+        } else {
+          if (inTable) {
+            result.push('</tbody></table>');
+            inTable = false;
+          }
+          result.push(line);
+        }
+      }
+      
+      if (inTable) {
+        result.push('</tbody></table>');
+      }
+      
+      html = result.join('\n');
+      
+      // Lists
+      html = html.replace(/^\* (.*)$/gim, '<li>$1</li>');
+      html = html.replace(/^- (.*)$/gim, '<li>$1</li>');
+      html = html.replace(/(<li>.*<\/li>\n)+/g, '<ul>$&</ul>');
+      
+      // Horizontal rules
+      html = html.replace(/^---$/gim, '<hr>');
+      
+      // Paragraphs
+      html = html.split('\n\n').map(para => {
+        if (para.trim() && 
+            !para.startsWith('<h') && 
+            !para.startsWith('<ul') && 
+            !para.startsWith('<table') && 
+            !para.startsWith('<pre') && 
+            !para.startsWith('<hr')) {
+          return `<p>${para.trim()}</p>`;
+        }
+        return para;
+      }).join('\n');
+      
+      return html;
+    }
+
+    async function loadMetadataTab(tabName) {
+      if (metadataCache[tabName]) {
+        metadataContent.innerHTML = metadataCache[tabName];
+        return;
+      }
+
+      metadataContent.innerHTML = '<p style="color:var(--text-muted);">Loading...</p>';
+
+      try {
+        const fileName = tabName === 'readme' ? 'README.md' : 'metadata.md';
+        const response = await fetch(fileName);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to load ${fileName}`);
+        }
+
+        const text = await response.text();
+        const html = simpleMarkdownToHTML(text);
+        
+        metadataCache[tabName] = html;
+        metadataContent.innerHTML = html;
+      } catch (error) {
+        metadataContent.innerHTML = `<p style="color:var(--text-muted);">Failed to load content: ${error.message}</p>`;
+      }
+    }
+
+    // Metadata tab click handlers
+    document.querySelectorAll('.metadata-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.metadata-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        loadMetadataTab(tab.dataset.tab);
+      });
+    });
+
+    // Load README by default (but don't show the section)
+    loadMetadataTab('readme');
   </script>
 </body>
 </html>

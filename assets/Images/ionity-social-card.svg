@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b2838;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="url(#text-grad)" text-anchor="middle">IONITY</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="32" fill="#8899aa" text-anchor="middle">Global IoT • AI • Network & IT</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="28" fill="#00c6ff" text-anchor="middle">Asset Library</text>
+</svg>
