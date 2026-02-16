@@ -1,0 +1,18 @@
+<svg width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect x="10" y="10" width="160" height="160" rx="30" fill="#0d1b2a" stroke="#00c6ff" stroke-width="3"/>
+  
+  <!-- IONITY Text -->
+  <text x="90" y="80" font-family="Arial, sans-serif" font-size="26" font-weight="bold" 
+        fill="#00c6ff" text-anchor="middle">IONITY</text>
+  
+  <!-- Tagline -->
+  <text x="90" y="105" font-family="Arial, sans-serif" font-size="9" 
+        fill="#00c6ff" text-anchor="middle" opacity="0.8">Building Tomorrow</text>
+  
+  <!-- Icon decoration -->
+  <g stroke="#00c6ff" stroke-width="2" fill="none" opacity="0.4">
+    <circle cx="90" cy="130" r="15"/>
+    <path d="M 75 130 L 60 145 M 105 130 L 120 145"/>
+  </g>
+</svg>

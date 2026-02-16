@@ -1,0 +1,20 @@
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="96" cy="96" r="88" fill="#0d1b2a" stroke="#00c6ff" stroke-width="3"/>
+  
+  <!-- IONITY Text -->
+  <text x="96" y="85" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        fill="#00c6ff" text-anchor="middle">IONITY</text>
+  
+  <!-- Tagline -->
+  <text x="96" y="110" font-family="Arial, sans-serif" font-size="10" 
+        fill="#00c6ff" text-anchor="middle" opacity="0.8">IoT · AI · Hardware</text>
+  
+  <!-- Small circuit decoration -->
+  <g stroke="#00c6ff" stroke-width="1.5" fill="none" opacity="0.3">
+    <circle cx="40" cy="40" r="8"/>
+    <circle cx="152" cy="40" r="8"/>
+    <circle cx="40" cy="152" r="8"/>
+    <circle cx="152" cy="152" r="8"/>
+  </g>
+</svg>
