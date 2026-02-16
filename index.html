@@ -332,6 +332,7 @@
     <a href="#jpeg" data-filter="jpeg">JPEG</a>
     <a href="#files" data-filter="files">Other Files</a>
     <a href="#readme" data-filter="readme">README</a>
+    <a href="#links" data-filter="links">Links</a>
     <a href="policy.html">Policy</a>
     <a href="license.html">License</a>
   </nav>
@@ -393,6 +394,44 @@
             <li>Repository structure and asset categories</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links-section" style="display: none;">
+      <h2>License and Policy Documents</h2>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+        
+        <!-- Document 1: Ionity License -->
+        <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+          <h3 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1.1rem;">Ionity (Pty) Ltd - License AED License (3).pdf</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">License and Policy documentation</p>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <a href="Ionity (Pty) Ltd- License AED License (3).pdf" target="_blank" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">View Online</a>
+            <a href="Ionity (Pty) Ltd- License AED License (3).pdf" download class="btn-raw" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--accent);">Download PDF</a>
+          </div>
+        </div>
+
+        <!-- Document 2: README.md -->
+        <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+          <h3 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1.1rem;">README.md</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">Updated README with new content and formatting</p>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <a href="README.md" target="_blank" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">View Online</a>
+            <a href="README.md" download class="btn-raw" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--accent);">Download</a>
+          </div>
+        </div>
+
+        <!-- Document 3: Version 7.3.1 Policy -->
+        <div>
+          <h3 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1.1rem;">Version 7.3.1 - Active, Policy 986 AED - Metadata</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">Antwerp Designs - Johan Wilhelm van Antwerp - Rustenburg &amp; Centurion - GLOBAL INTENT - License and Policy</p>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <a href="Version 7.3.1  - Active, Policy 986 AED - Metadata -  Antwerp Designs - Johan Wilhelm van Antwerp - Rustenburg & Centurion - GLOBAL INTENT - 9003135105083txt (1).pdf" target="_blank" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">View Online</a>
+            <a href="Version 7.3.1  - Active, Policy 986 AED - Metadata -  Antwerp Designs - Johan Wilhelm van Antwerp - Rustenburg & Centurion - GLOBAL INTENT - 9003135105083txt (1).pdf" download class="btn-raw" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--accent);">Download PDF</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -541,11 +580,13 @@
 
         // Toggle sections
         document.getElementById('images-section').style.display =
-          (currentFilter === 'files' || currentFilter === 'readme') ? 'none' : '';
+          (currentFilter === 'files' || currentFilter === 'readme' || currentFilter === 'links') ? 'none' : '';
         document.getElementById('files-section').style.display =
-          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' ? '' : 'none';
+          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' && currentFilter !== 'links' ? '' : 'none';
         document.getElementById('readme-section').style.display =
           currentFilter === 'readme' ? '' : 'none';
+        document.getElementById('links-section').style.display =
+          currentFilter === 'links' ? '' : 'none';
 
         renderCards(currentFilter, searchInput.value.trim().toLowerCase());
       });
