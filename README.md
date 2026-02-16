@@ -16,7 +16,24 @@
 
 > ### ❝ Building Tomorrow, Today. Anything is Possible with God. ❞
 
+## 📋 Table of Contents
+
+- [1. Identity (Author / Creator)](#1-identity-author--creator)
+- [2. Brand & Company Overview](#2-brand--company-overview)
+- [3. Markets, Capabilities & Technology](#3-markets-capabilities--technology)
+- [4. Websites & Presence](#4-websites--presence)
+- [5. Contact Details](#5-contact-details)
+- [6. Legal & Rights](#6-legal--rights)
+- [7. Developer Resources](#7-developer-resources-copy-paste-metadata)
+- [8. Repository Structure](#8-repository-structure)
+- [9. Asset Categories](#9-asset-categories)
+- [10. Quick Start](#10-quick-start--github-pages)
+- [11. License Documents](#11-license-documents)
+
+---
+
 ## 1. Identity (Author / Creator)
+
 * **Author / Creator:** Johan Wilhelm van Antwerp
 * **Organization:** Ionity / Antwerp Designs / AEDI (Antwerp Ecosystems Designs Ionity)
 * **Author ID:** `9003135105083`
@@ -26,6 +43,7 @@
 ---
 
 ## 2. Brand & Company Overview
+
 **Ionity** (formerly Antwerp Designs, Est. 2018) is a global ecosystem solutionist specializing in the convergence of AI, IoT, and high-performance hardware.
 
 * **Tagline:** *Ecosystems Solutionist | IoT Engineer*
@@ -35,6 +53,7 @@
 ---
 
 ## 3. Markets, Capabilities & Technology
+
 **FOCUS on IoT AI IT SYSTEMS CLOUD HARDWARE SOFTWARE OF IONITY in webcontext.**
 
 | Category | Details |
@@ -46,6 +65,7 @@
 | **Global Position** | Global Intent | Location: **South Africa** |
 
 ### Offer / Work Summary
+
 Ionity / Antwerp Designs designs and builds secure systems that connect devices, automate operations, and unlock real-time intelligence across industries—covering **edge computing**, **embedded hardware**, **cloud architecture**, and **custom software**.
 
 ---
@@ -63,6 +83,7 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 ---
 
 ## 5. Contact Details
+
 * **Email:** `johan@ionity.today` | `ai@ionity.today`
 * **Admin:** `services@ionity.world` | `admin@ionity.today`
 * **Personal:** `johanvanantwerp@gmail.com`
@@ -73,17 +94,20 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 ---
 
 ## 6. Legal & Rights
+
 * **Signature:** "Antwerp Designs | Ionity or Ionity (Pty) Ltd"
-* **Policy:** AED 986 (Policy 986)
-* **License:** AED 900 (Hardware & Software)
+* **Policy:** AED 986 (Policy 986) - [View Document](#11-license-documents)
+* **License:** AED 900 (Hardware & Software) - [View Document](#11-license-documents)
 * **Rights:** All rights reserved | TM² | CC BY-NC-SA 4.0 | 2018–2026
 
 ---
 
 ## 7. Developer Resources (Copy-Paste Metadata)
+
 *Use the code blocks below for web integration (`index.html`).*
 
 ### A. HTML Meta Tags (SEO)
+
 ```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,58 +120,49 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 <meta name="geo.placename" content="Pretoria">
 <meta name="geo.position" content="-25.7479;28.2293">
 <meta name="ICBM" content="-25.7479, 28.2293">
-
-
--------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Ionity Today — Asset Library
-
-> **Global IoT, AI, Network & IT — Brand Assets**
-
-Public asset repository for [Ionity Today](https://www.ionity.today). Browse logos, icons, social cards, and brand materials online via GitHub Pages.
+```
 
 ---
 
-## Live Site
-
-**[https://ionity-today.github.io/assets-ionity](https://ionity-today.github.io/assets-ionity)**
-
-> Update the URL above once the repository is published and GitHub Pages is enabled.
-
----
-
-## Repository Structure
+## 8. Repository Structure
 
 ```
-assets-ionity/
-├── index.html                  # Asset gallery (GitHub Pages entry)
-├── ionity.today.xmp            # XMP metadata sidecar
-├── _config.yml                 # Jekyll / GitHub Pages config
-├── CNAME                       # Custom domain (optional)
-├── LICENSE                     # License
-├── README.md                   # This file
-├── requirements.md             # Hosting requirements & setup
-├── .nojekyll                   # Bypass Jekyll processing
+Metadata/
+├── index.html                              # Asset gallery (GitHub Pages entry)
+├── README.md                               # This file - Complete documentation
+├── ionity.today.xmp                        # XMP metadata sidecar
+├── _config.yml                             # Jekyll / GitHub Pages config
+├── CNAME                                   # Custom domain (optional)
+├── LICENSE                                 # License
+├── requirements.md                         # Hosting requirements & setup
+├── .nojekyll                              # Bypass Jekyll processing
+├── Ionity (Pty) Ltd- License AED License (3).pdf
+├── Version 7.3.1 - Active, Policy 986 AED - Metadata - Antwerp Designs - Johan Wilhelm van Antwerp - Rustenburg & Centurion - GLOBAL INTENT - 9003135105083txt (1).pdf
 └── assets/
-    ├── images formats          # (placeholder)
+    ├── images formats                      # (placeholder)
     └── Images/
-        ├── *.png               # Raster logos & icons
-        ├── *.svg               # Vector logos & icons
-        ├── *.jpeg / *.jpg      # Photo assets
+        ├── *.png                          # Raster logos & icons
+        ├── *.svg                          # Vector logos & icons
+        ├── *.jpeg / *.jpg                 # Photo assets
         └── ...
 ```
 
-## Asset Categories
+---
+
+## 9. Asset Categories
 
 | Category | Formats | Description |
 |----------|---------|-------------|
-| Logos | PNG, SVG | Ionity brand logos (light, dark, transparent) |
-| Icons | PNG, SVG | Favicons, app icons (192×192, 512×512), social icons |
-| Social | PNG, SVG | Open Graph cards, author photos |
-| Platform | PNG, SVG | GitHub, LinkedIn, Gravatar, WhatsApp icons |
-| Technical | PNG, SVG | PCB designs, edge intelligence, GUI screenshots |
+| **Logos** | PNG, SVG | Ionity brand logos (light, dark, transparent) |
+| **Icons** | PNG, SVG | Favicons, app icons (192×192, 512×512), social icons |
+| **Social** | PNG, SVG | Open Graph cards, author photos |
+| **Platform** | PNG, SVG | GitHub, LinkedIn, Gravatar, WhatsApp icons |
+| **Technical** | PNG, SVG | PCB designs, edge intelligence, GUI screenshots |
+| **Documents** | PDF, MD | License and policy documents |
 
-## Quick Start — GitHub Pages
+---
+
+## 10. Quick Start — GitHub Pages
 
 1. Push this repository to GitHub
 2. Go to **Settings → Pages**
@@ -155,13 +170,62 @@ assets-ionity/
 4. (Optional) Add custom domain in `CNAME`
 5. The site will be live at the Pages URL
 
-## Author
+**Live Site:** Access all assets through the interactive web interface at your GitHub Pages URL.
 
-**Johan Wilhelm van Antwerp**
-- Web: [ionity.today](https://www.ionity.today)
+---
 
-## License
+## 11. License Documents
 
-© 2026 Ionity Today. All rights reserved.  
-See [LICENSE](LICENSE) for details.
+All license and policy documents are available both online and for download:
+
+### 📄 Ionity (Pty) Ltd - License AED License (3).pdf
+**License and Policy documentation**
+- [View Online](Ionity%20(Pty)%20Ltd-%20License%20AED%20License%20(3).pdf)
+- [Download PDF](Ionity%20(Pty)%20Ltd-%20License%20AED%20License%20(3).pdf)
+
+### 📄 Version 7.3.1 - Active, Policy 986 AED - Metadata
+**Antwerp Designs - Johan Wilhelm van Antwerp - Rustenburg & Centurion - GLOBAL INTENT**
+- [View Online](Version%207.3.1%20%20-%20Active,%20Policy%20986%20AED%20-%20Metadata%20-%20%20Antwerp%20Designs%20-%20Johan%20Wilhelm%20van%20Antwerp%20-%20Rustenburg%20&%20Centurion%20-%20GLOBAL%20INTENT%20-%209003135105083txt%20(1).pdf)
+- [Download PDF](Version%207.3.1%20%20-%20Active,%20Policy%20986%20AED%20-%20Metadata%20-%20%20Antwerp%20Designs%20-%20Johan%20Wilhelm%20van%20Antwerp%20-%20Rustenburg%20&%20Centurion%20-%20GLOBAL%20INTENT%20-%209003135105083txt%20(1).pdf)
+
+> **Note:** All documents can also be accessed through the "Links" tab on the main asset gallery page.
+
+---
+
+## 🚀 Browse Assets Online
+
+Visit the **[Live Asset Gallery](#)** to:
+- Browse all logos, icons, and brand assets
+- View images in high resolution
+- Download assets individually
+- Access README documentation
+- View and download license and policy documents
+
+---
+
+## 📧 Support & Contact
+
+For questions, licensing inquiries, or collaboration:
+
+- **Email:** `johan@ionity.today`
+- **Website:** [ionity.today](https://www.ionity.today)
+- **LinkedIn:** [Johan van Antwerp](https://www.linkedin.com/in/ionity)
+
+---
+
+## 📜 Copyright & License
+
+© 2018–2026 Ionity Today | Antwerp Designs. All rights reserved.
+
+See [License Documents](#11-license-documents) for full licensing information.
+
+**Policy:** AED 986 | **License:** AED 900 | **Rights:** TM² | CC BY-NC-SA 4.0
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#-table-of-contents)**
+
+</div>
 
