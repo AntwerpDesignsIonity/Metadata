@@ -331,6 +331,7 @@
     <a href="#svg" data-filter="svg">SVG</a>
     <a href="#jpeg" data-filter="jpeg">JPEG</a>
     <a href="#files" data-filter="files">Other Files</a>
+    <a href="#readme" data-filter="readme">README</a>
   </nav>
 
   <main>
@@ -358,10 +359,39 @@
       <h2>Other Files</h2>
       <ul class="file-list" id="fileList">
         <li>
+          <span>README.md — <em>Repository Documentation</em></span>
+          <div style="display: flex; gap: 0.5rem;">
+            <a href="README.md" target="_blank">View</a>
+            <a href="README.md" download>Download</a>
+          </div>
+        </li>
+        <li>
           <span>ionity.today.xmp — <em>XMP Metadata Sidecar</em></span>
           <a href="ionity.today.xmp" target="_blank">View</a>
         </li>
       </ul>
+    </section>
+
+    <!-- README Section -->
+    <section id="readme-section" style="display: none;">
+      <h2>README Documentation</h2>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+        <div style="margin-bottom: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+          <a href="README.md" target="_blank" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">View README</a>
+          <a href="README.md" download class="btn-raw" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--accent);">Download README</a>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.9rem;">
+          <p><strong>README.md</strong> contains the complete repository documentation, including:</p>
+          <ul style="margin: 0.8rem 0 0 1.5rem; line-height: 1.8;">
+            <li>Project identity and author information</li>
+            <li>Brand and company overview</li>
+            <li>Markets, capabilities, and technology details</li>
+            <li>Contact details and website links</li>
+            <li>Legal rights and developer resources</li>
+            <li>Repository structure and asset categories</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -505,9 +535,11 @@
 
         // Toggle sections
         document.getElementById('images-section').style.display =
-          currentFilter === 'files' ? 'none' : '';
+          (currentFilter === 'files' || currentFilter === 'readme') ? 'none' : '';
         document.getElementById('files-section').style.display =
-          currentFilter === 'files' || currentFilter === 'all' ? '' : 'none';
+          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' ? '' : 'none';
+        document.getElementById('readme-section').style.display =
+          currentFilter === 'readme' ? '' : 'none';
 
         renderCards(currentFilter, searchInput.value.trim().toLowerCase());
       });
