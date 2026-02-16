@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policy — Ionity Today</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Ionity Today - Policy AED 986. Official governance, rights, and usage terms.">
+  <meta name="author" content="Johan Wilhelm van Antwerp">
+  <meta name="keywords" content="Ionity, Policy, AED 986, Terms, Governance">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Policy — Ionity Today">
+  <meta property="og:description" content="Official policy and governance for Ionity Today.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ionity.today/policy">
+  <meta property="og:image" content="assets/Images/ionity-social-card.png">
+
+  <!-- Favicon & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Images/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/Images/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00c6ff">
+
+  <style>
+    :root {
+      --primary: #0d1b2a;
+      --accent: #00c6ff;
+      --accent-alt: #0072ff;
+      --surface: #1b2838;
+      --surface-hover: #233347;
+      --text: #e0e6ed;
+      --text-muted: #8899aa;
+      --border: #2a3a4a;
+      --radius: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--surface) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    header .meta {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    header .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header .meta a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Main */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      flex: 1;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    main h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.8rem;
+      color: var(--text);
+    }
+
+    main p, main li {
+      margin-bottom: 0.8rem;
+      line-height: 1.8;
+    }
+
+    main ul, main ol {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    main strong {
+      color: var(--accent);
+    }
+
+    .policy-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .policy-id {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.6rem; }
+      main h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ionity Today</h1>
+    <p>Official Policy & Governance</p>
+    <div class="meta">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener">ionity.today</a>
+      &nbsp;·&nbsp; &copy; 2026 Johan Wilhelm van Antwerp
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="policy.html" class="active">Policy</a>
+    <a href="license.html">License</a>
+    <a href="README.md" target="_blank">Documentation</a>
+  </nav>
+
+  <main>
+    <div class="policy-box">
+      <span class="policy-id">POLICY AED 986</span>
+      <h2>Ionity Today — Official Policy</h2>
+      <p><em>Effective Date: 2018 – Present (2026)</em></p>
+    </div>
+
+    <section>
+      <h3>1. Identity & Legal Entity</h3>
+      <p><strong>Legal Name:</strong> Ionity (Pty) Ltd</p>
+      <p><strong>Founder & Director:</strong> Johan Wilhelm van Antwerp</p>
+      <p><strong>Established:</strong> 2018 (transitioned from Antwerp Designs to Ionity in 2025)</p>
+      <p><strong>Location:</strong> Pretoria, Gauteng, South Africa</p>
+      <p><strong>Tagline:</strong> <em>"Building Tomorrow, Today. Anything is Possible with God."</em></p>
+    </section>
+
+    <section>
+      <h3>2. Scope & Mission</h3>
+      <p>Ionity is a global ecosystem solutionist specializing in the convergence of <strong>AI, IoT, Cloud, and Hardware</strong>. Our mission is to build secure, power-efficient systems that connect devices, automate operations, and unlock real-time intelligence across industries.</p>
+      <ul>
+        <li><strong>Core Markets:</strong> IoT Integrations, Cloud Architecture, Edge Computing, AI Inference, Hardware Development, Cybersecurity</li>
+        <li><strong>Specialization:</strong> Power-saving units, embedded systems, custom PCB design, SCADA, DAQ, Predictive Maintenance (PdM)</li>
+        <li><strong>Philosophy:</strong> Precision, Performance, Long-term Stability</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>3. Governance Structure</h3>
+      <div class="policy-box">
+        <p><strong>Policy ID:</strong> AED 986</p>
+        <p><strong>License ID:</strong> AED 900 (Hardware & Software)</p>
+        <p><strong>Copyright:</strong> © 2018–2026 Antwerp Designs | Ionity</p>
+        <p><strong>Rights:</strong> All rights reserved. TM²</p>
+        <p><strong>Security Level:</strong> Encrypted</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>4. Intellectual Property Rights</h3>
+      <p>All branding, logos, assets, designs, software, and hardware developed by Ionity are protected under copyright and trademark law. Unauthorized use, reproduction, or distribution without explicit written consent is prohibited.</p>
+      <p><strong>Trademark Notice:</strong> "Ionity" and related logos are trademarks of Ionity (Pty) Ltd. TM² designation applies.</p>
+    </section>
+
+    <section>
+      <h3>5. Usage Terms & Restrictions</h3>
+      <ul>
+        <li><strong>Commercial Use:</strong> Requires written authorization</li>
+        <li><strong>Attribution:</strong> Must credit "Ionity (Pty) Ltd" or "Johan Wilhelm van Antwerp" when using assets or derivative works</li>
+        <li><strong>Modifications:</strong> Derivative works allowed only under Creative Commons BY-NC-SA 4.0 for non-commercial projects</li>
+        <li><strong>Resale Prohibition:</strong> Assets and branding materials may not be resold or redistributed as standalone products</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>6. Data & Privacy</h3>
+      <p>Ionity respects user privacy and adheres to data protection standards. Any data collected through Ionity systems is used solely for operational purposes and is encrypted at rest and in transit.</p>
+      <ul>
+        <li>No personal data is sold or shared with third parties without consent</li>
+        <li>Users have the right to request data deletion or export</li>
+        <li>Security protocols follow industry best practices (F-iT Cyber Security standards)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>7. Liability & Warranties</h3>
+      <p>While Ionity strives for excellence, all products and services are provided "as is" without warranties of any kind, express or implied. Ionity shall not be liable for any indirect, incidental, or consequential damages arising from the use of its products or services.</p>
+    </section>
+
+    <section>
+      <h3>8. Amendments & Updates</h3>
+      <p>Ionity reserves the right to update this policy at any time. Changes will be effective immediately upon publication. Users are encouraged to review this policy periodically.</p>
+      <p><strong>Last Updated:</strong> February 16, 2026</p>
+    </section>
+
+    <section>
+      <h3>9. Contact & Support</h3>
+      <div class="policy-box">
+        <p><strong>Support Email:</strong> <a href="mailto:johan@ionity.today">johan@ionity.today</a></p>
+        <p><strong>Services:</strong> <a href="mailto:services@ionity.world">services@ionity.world</a></p>
+        <p><strong>Emergency Contact:</strong> +27 64 699 9877</p>
+        <p><strong>Website:</strong> <a href="https://www.ionity.today" target="_blank">www.ionity.today</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h3>10. Legal Jurisdiction</h3>
+      <p>This policy is governed by the laws of South Africa. Any disputes arising from this policy shall be resolved in the courts of Pretoria, Gauteng, South Africa.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2018–2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
+    <p style="margin-top:0.4rem;">
+      Policy AED 986 &nbsp;·&nbsp; License AED 900
+      &nbsp;·&nbsp;
+      <a href="https://github.com/AntwerpDesignsIonity" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
