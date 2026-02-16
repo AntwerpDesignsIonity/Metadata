@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ionity Today — Asset Library</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Ionity Today - Global IoT, AI, Network and IT assets and branding. Browse and download logos, icons, and brand assets.">
+  <meta name="author" content="Johan Wilhelm van Antwerp">
+  <meta name="keywords" content="Ionity, IoT, AI, Network, IT, Branding, Assets, Logo, Icons">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Ionity Today — Asset Library">
+  <meta property="og:description" content="Browse and download Ionity Today brand assets — logos, icons, social cards, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ionity.today/assets">
+  <meta property="og:image" content="assets/Images/ionity-social-card.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ionity Today — Asset Library">
+  <meta name="twitter:description" content="Browse and download Ionity Today brand assets.">
+  <meta name="twitter:image" content="assets/Images/ionity-social-card.png">
+
+  <!-- Favicon & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Images/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/Images/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00c6ff">
+
+  <style>
+    :root {
+      --primary: #0d1b2a;
+      --accent: #00c6ff;
+      --accent-alt: #0072ff;
+      --surface: #1b2838;
+      --surface-hover: #233347;
+      --text: #e0e6ed;
+      --text-muted: #8899aa;
+      --border: #2a3a4a;
+      --radius: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--surface) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    header .meta {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    header .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header .meta a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Main */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Filter */
+    .filter-bar {
+      display: flex;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-bar input {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .filter-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-bar select {
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    /* Asset Grid */
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .asset-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .asset-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 198, 255, 0.12);
+    }
+
+    .asset-card .preview {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      padding: 1rem;
+      overflow: hidden;
+    }
+
+    .asset-card .preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .asset-card .info {
+      padding: 0.8rem 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .asset-card .info .name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      word-break: break-word;
+    }
+
+    .asset-card .info .type {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .asset-card .actions {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem 0.8rem;
+    }
+
+    .asset-card .actions a {
+      flex: 1;
+      display: inline-block;
+      text-align: center;
+      padding: 0.35rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-view {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    .btn-view:hover {
+      background: #33d4ff;
+    }
+
+    .btn-raw {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .btn-raw:hover {
+      background: rgba(0, 198, 255, 0.1);
+    }
+
+    /* File List (non-image) */
+    .file-list {
+      list-style: none;
+    }
+
+    .file-list li {
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .file-list li:hover {
+      background: var(--surface-hover);
+    }
+
+    .file-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .file-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.6rem; }
+      .asset-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+      .asset-card .preview { height: 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ionity Today</h1>
+    <p>Global IoT, AI, Network &amp; IT — Asset Library</p>
+    <div class="meta">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener">ionity.today</a>
+      &nbsp;·&nbsp; &copy; 2026 Johan Wilhelm van Antwerp
+    </div>
+  </header>
+
+  <nav>
+    <a href="#all" class="active" data-filter="all">All Assets</a>
+    <a href="#png" data-filter="png">PNG</a>
+    <a href="#svg" data-filter="svg">SVG</a>
+    <a href="#jpeg" data-filter="jpeg">JPEG</a>
+    <a href="#files" data-filter="files">Other Files</a>
+  </nav>
+
+  <main>
+
+    <!-- Search & Filter -->
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Search assets…" aria-label="Search assets">
+      <select id="sortSelect" aria-label="Sort assets">
+        <option value="name-asc">Name A–Z</option>
+        <option value="name-desc">Name Z–A</option>
+        <option value="type">By Type</option>
+      </select>
+    </div>
+
+    <!-- Image Assets -->
+    <section id="images-section">
+      <h2>Images</h2>
+      <div class="asset-grid" id="assetGrid">
+        <!-- Cards are generated by JS below -->
+      </div>
+    </section>
+
+    <!-- Other Files -->
+    <section id="files-section">
+      <h2>Other Files</h2>
+      <ul class="file-list" id="fileList">
+        <li>
+          <span>ionity.today.xmp — <em>XMP Metadata Sidecar</em></span>
+          <a href="ionity.today.xmp" target="_blank">View</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
+    <p style="margin-top:0.4rem;">
+      Hosted via <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/ionity-today/assets-ionity" target="_blank" rel="noopener">Repository</a>
+    </p>
+  </footer>
+
+  <script>
+    // ─── Asset Registry ───────────────────────────────────────────────
+    const BASE = 'assets/Images/';
+    const assets = [
+      { name: 'Ionity Logo (Transparent)', file: '-transparrent-ionity-logo-edited - Copy.png' },
+      { name: 'Ionity Logo (Transparent) SVG', file: '-transparrent-ionity-logo-edited - Copy.svg' },
+      { name: 'AEDI Logo PC', file: 'aedi-logo-pc.jpeg' },
+      { name: 'AEDI Logo PC SVG', file: 'aedi-logo-pc.svg' },
+      { name: 'AEDI Logo', file: 'aedi-logo.svg' },
+      { name: 'AI Custom Ionity PCB', file: 'ai-m-custom-ionity-pcb.png' },
+      { name: 'AI Custom Ionity PCB SVG', file: 'ai-m-custom-ionity-pcb.svg' },
+      { name: 'Apple Touch Icon', file: 'apple-touch-icon.png' },
+      { name: 'Apple Touch Icon SVG', file: 'apple-touch-icon.svg' },
+      { name: 'Author — Johan', file: 'author-johan.jpg' },
+      { name: 'Author — Johan SVG', file: 'author-johan.svg' },
+      { name: 'Eagle Logo Ionity Ecosystems', file: 'Eagle logo Ionity ECOSYSTEMS ionity world.png' },
+      { name: 'Eagle Logo Ionity Ecosystems SVG', file: 'Eagle logo Ionity ECOSYSTEMS ionity world.svg' },
+      { name: 'Edge Intelligence EIDI', file: 'Edge intelegence eidi.png' },
+      { name: 'Edge Intelligence EIDI SVG', file: 'Edge intelegence eidi.svg' },
+      { name: 'GitHub Icon SVG', file: 'github-icon.svg' },
+      { name: 'GitHub', file: 'github.png' },
+      { name: 'GitHub SVG', file: 'github.svg' },
+      { name: 'Gravatar Icon SVG', file: 'gravatar-icon.svg' },
+      { name: 'Gravatar', file: 'gravatar.png' },
+      { name: 'Gravatar SVG', file: 'gravatar.svg' },
+      { name: 'Icon 192×192', file: 'icon-192.png' },
+      { name: 'Icon 192×192 SVG', file: 'icon-192.svg' },
+      { name: 'Icon 512×512', file: 'icon-512.png' },
+      { name: 'Icon 512×512 SVG', file: 'icon-512.svg' },
+      { name: 'Ionity AEDI Logo Policy', file: 'ionity-aedi-logo-computer-ai-986-pol.svg' },
+      { name: 'Ionity Logo Edited', file: 'ionity-logo-edited.png' },
+      { name: 'Ionity Logo Edited SVG', file: 'ionity-logo-edited.svg' },
+      { name: 'Ionity Social Card', file: 'ionity-social-card.png' },
+      { name: 'Ionity Social Card SVG', file: 'ionity-social-card.svg' },
+      { name: 'Ionity Today Logo (Full Policy)', file: 'ionity-today-logo-edited -policy986aed-johanwilhelmvanantwerp-ionity-today-world-global-iot-ai-network-it.png' },
+      { name: 'Ionity Today Logo (Full Policy) SVG', file: 'ionity-today-logo-edited -policy986aed-johanwilhelmvanantwerp-ionity-today-world-global-iot-ai-network-it.svg' },
+      { name: 'Ionity GUI', file: 'Ionity_GUI.jpeg' },
+      { name: 'Ionity GUI SVG', file: 'Ionity_GUI.svg' },
+      { name: 'Ionity Repo', file: 'IONITY_REPO.jpeg' },
+      { name: 'Ionity Repo SVG', file: 'IONITY_REPO.svg' },
+      { name: 'LinkedIn Icon SVG', file: 'linkedin-icon.svg' },
+      { name: 'LinkedIn', file: 'linkedin.png' },
+      { name: 'LinkedIn SVG', file: 'linkedin.svg' },
+      { name: 'Logo Dark — Ionity Antwerp Designs', file: 'logo-dark-ionity-antwerp-designs-johan-wilhelm-van-antwerp-south-africa.png' },
+      { name: 'Logo Dark — Ionity Antwerp Designs SVG', file: 'logo-dark-ionity-antwerp-designs-johan-wilhelm-van-antwerp-south-africa.svg' },
+      { name: 'Logo Ionity Clouds', file: 'logo-ionity-clouds.png' },
+      { name: 'Logo Ionity Clouds SVG', file: 'logo-ionity-clouds.svg' },
+      { name: 'Logo White', file: 'logo-white.png' },
+      { name: 'Logo White SVG', file: 'logo-white.svg' },
+      { name: 'WhatsApp', file: 'whatsapp.png' },
+      { name: 'WhatsApp SVG', file: 'whatsapp.svg' },
+    ];
+
+    // ─── Helpers ──────────────────────────────────────────────────────
+    function ext(filename) {
+      const e = filename.split('.').pop().toLowerCase();
+      return e;
+    }
+
+    function isRaster(filename) {
+      return ['png', 'jpg', 'jpeg'].includes(ext(filename));
+    }
+
+    // ─── Render ───────────────────────────────────────────────────────
+    const grid = document.getElementById('assetGrid');
+    const searchInput = document.getElementById('searchInput');
+    const sortSelect = document.getElementById('sortSelect');
+
+    function renderCards(filterType, query) {
+      grid.innerHTML = '';
+      let filtered = assets.filter(a => {
+        const e = ext(a.file);
+        const matchType = filterType === 'all'
+          || (filterType === 'jpeg' && (e === 'jpg' || e === 'jpeg'))
+          || e === filterType;
+        const matchQuery = !query || a.name.toLowerCase().includes(query) || a.file.toLowerCase().includes(query);
+        return matchType && matchQuery;
+      });
+
+      // Sort
+      const sort = sortSelect.value;
+      if (sort === 'name-asc') filtered.sort((a, b) => a.name.localeCompare(b.name));
+      else if (sort === 'name-desc') filtered.sort((a, b) => b.name.localeCompare(a.name));
+      else if (sort === 'type') filtered.sort((a, b) => ext(a.file).localeCompare(ext(b.file)));
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;">No assets match your search.</p>';
+        return;
+      }
+
+      filtered.forEach(a => {
+        const path = BASE + encodeURIComponent(a.file).replace(/%20/g, ' ');
+        const encodedPath = BASE + encodeURIComponent(a.file);
+        const card = document.createElement('div');
+        card.className = 'asset-card';
+        card.dataset.type = ext(a.file);
+
+        const previewHTML = isRaster(a.file)
+          ? `<img src="${encodedPath}" alt="${a.name}" loading="lazy">`
+          : ext(a.file) === 'svg'
+            ? `<img src="${encodedPath}" alt="${a.name}" loading="lazy">`
+            : `<span style="color:var(--text-muted);font-size:2rem;">${ext(a.file).toUpperCase()}</span>`;
+
+        card.innerHTML = `
+          <div class="preview">${previewHTML}</div>
+          <div class="info">
+            <span class="name">${a.name}</span>
+            <span class="type">${ext(a.file).toUpperCase()}</span>
+          </div>
+          <div class="actions">
+            <a href="${encodedPath}" target="_blank" class="btn-view">View</a>
+            <a href="${encodedPath}" download class="btn-raw">Download</a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // ─── Events ───────────────────────────────────────────────────────
+    let currentFilter = 'all';
+
+    document.querySelectorAll('nav a[data-filter]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        currentFilter = link.dataset.filter;
+
+        // Toggle sections
+        document.getElementById('images-section').style.display =
+          currentFilter === 'files' ? 'none' : '';
+        document.getElementById('files-section').style.display =
+          currentFilter === 'files' || currentFilter === 'all' ? '' : 'none';
+
+        renderCards(currentFilter, searchInput.value.trim().toLowerCase());
+      });
+    });
+
+    searchInput.addEventListener('input', () => {
+      renderCards(currentFilter, searchInput.value.trim().toLowerCase());
+    });
+
+    sortSelect.addEventListener('change', () => {
+      renderCards(currentFilter, searchInput.value.trim().toLowerCase());
+    });
+
+    // Initial render
+    renderCards('all', '');
+  </script>
+</body>
+</html>

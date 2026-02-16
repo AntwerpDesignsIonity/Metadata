@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.npm
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Debug tools
+.mcp-debug-tools/
+
+# Build artifacts
+_site/
+.jekyll-cache/

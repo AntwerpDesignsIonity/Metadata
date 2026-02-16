@@ -1,0 +1,33 @@
+# GitHub Pages / Jekyll configuration for Ionity Today Asset Library
+
+title: Ionity Today — Asset Library
+description: >-
+  Global IoT, AI, Network and IT brand assets. Browse and download
+  logos, icons, social cards, and branding materials for Ionity Today.
+
+url: "https://ionity-today.github.io"
+baseurl: "/assets-ionity"
+
+# Author
+author:
+  name: Johan Wilhelm van Antwerp
+  url: https://www.ionity.today
+
+# Build
+theme: null
+plugins: []
+exclude:
+  - README.md
+  - requirements.md
+  - LICENSE
+  - .gitignore
+  - .mcp-debug-tools/
+  - "*.xmp"
+
+include:
+  - index.html
+  - assets/
+
+# GitHub Pages
+github:
+  is_project_page: true
