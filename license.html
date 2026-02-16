@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License — Ionity Today</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Ionity Today - License AED 900. MIT License for software and hardware documentation.">
+  <meta name="author" content="Johan Wilhelm van Antwerp">
+  <meta name="keywords" content="Ionity, License, AED 900, MIT, Open Source">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="License — Ionity Today">
+  <meta property="og:description" content="Official license information for Ionity Today assets and software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ionity.today/license">
+  <meta property="og:image" content="assets/Images/ionity-social-card.png">
+
+  <!-- Favicon & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Images/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/Images/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00c6ff">
+
+  <style>
+    :root {
+      --primary: #0d1b2a;
+      --accent: #00c6ff;
+      --accent-alt: #0072ff;
+      --surface: #1b2838;
+      --surface-hover: #233347;
+      --text: #e0e6ed;
+      --text-muted: #8899aa;
+      --border: #2a3a4a;
+      --radius: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--surface) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    header .meta {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    header .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header .meta a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Main */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      flex: 1;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    main h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.8rem;
+      color: var(--text);
+    }
+
+    main p, main li {
+      margin-bottom: 0.8rem;
+      line-height: 1.8;
+    }
+
+    main ul {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    main strong {
+      color: var(--accent);
+    }
+
+    .license-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 1rem 0;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      overflow-x: auto;
+    }
+
+    .license-id {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.6rem; }
+      main h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ionity Today</h1>
+    <p>Software & Hardware Licensing</p>
+    <div class="meta">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener">ionity.today</a>
+      &nbsp;·&nbsp; &copy; 2026 Johan Wilhelm van Antwerp
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="policy.html">Policy</a>
+    <a href="license.html" class="active">License</a>
+    <a href="README.md" target="_blank">Documentation</a>
+  </nav>
+
+  <main>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2rem;">
+      <span class="license-id">LICENSE AED 900</span>
+      <h2>MIT License</h2>
+      <p><em>For software, documentation, and asset repository</em></p>
+    </div>
+
+    <section>
+      <h3>Overview</h3>
+      <p>This repository and its contents are licensed under the <strong>MIT License</strong>, one of the most permissive open-source licenses. This allows you to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software and associated documentation.</p>
+    </section>
+
+    <section>
+      <h3>Full License Text</h3>
+      <div class="license-box">
+MIT License
+
+Copyright (c) 2026 Johan Wilhelm van Antwerp / Ionity Today
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+      </div>
+    </section>
+
+    <section>
+      <h3>What This Means</h3>
+      <ul>
+        <li><strong>✓ Commercial Use:</strong> You can use this software/assets for commercial purposes</li>
+        <li><strong>✓ Modification:</strong> You can modify the source code or assets</li>
+        <li><strong>✓ Distribution:</strong> You can distribute original or modified versions</li>
+        <li><strong>✓ Private Use:</strong> You can use and modify privately</li>
+        <li><strong>⚠ Liability:</strong> The software is provided "as is" without warranty</li>
+        <li><strong>⚠ Trademark Use:</strong> Trademark rights are not granted under this license</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Hardware & Design Files</h3>
+      <p>Hardware designs, schematics, PCB layouts, and related documentation are also covered under the MIT License, allowing you to:</p>
+      <ul>
+        <li>Study and learn from the designs</li>
+        <li>Build devices based on the designs</li>
+        <li>Modify and improve the designs</li>
+        <li>Distribute modified or unmodified versions</li>
+        <li>Use in commercial products (with attribution)</li>
+      </ul>
+      <p><strong>Attribution Requirement:</strong> Include the copyright notice and license text in any substantial portions of the work.</p>
+    </section>
+
+    <section>
+      <h3>Brand Assets & Trademarks</h3>
+      <p>While the code and documentation are MIT licensed, please note:</p>
+      <ul>
+        <li><strong>Trademarks:</strong> "Ionity", "Antwerp Designs", and associated logos are trademarks of Ionity (Pty) Ltd</li>
+        <li><strong>Brand Usage:</strong> Requires explicit permission for commercial branding purposes</li>
+        <li><strong>Attribution:</strong> Credit "Ionity (Pty) Ltd" or "Johan Wilhelm van Antwerp" when using brand assets</li>
+      </ul>
+      <p>For brand asset usage beyond the scope of this license, please refer to our <a href="policy.html">Policy AED 986</a> or contact us directly.</p>
+    </section>
+
+    <section>
+      <h3>Additional Licensing Information</h3>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+        <p><strong>License ID:</strong> AED 900</p>
+        <p><strong>Policy Reference:</strong> <a href="policy.html">AED 986</a></p>
+        <p><strong>Effective Date:</strong> 2018 – Present (2026)</p>
+        <p><strong>Applicable To:</strong> Hardware designs, software, documentation, and repository assets</p>
+        <p><strong>Creative Commons Alternative:</strong> For non-commercial projects, assets may also be used under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Questions & Permissions</h3>
+      <p>If you have questions about licensing or need special permissions beyond the scope of this license, please contact:</p>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-top: 1rem;">
+        <p><strong>Email:</strong> <a href="mailto:johan@ionity.today">johan@ionity.today</a></p>
+        <p><strong>Services:</strong> <a href="mailto:services@ionity.world">services@ionity.world</a></p>
+        <p><strong>Website:</strong> <a href="https://www.ionity.today" target="_blank">www.ionity.today</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2018–2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
+    <p style="margin-top:0.4rem;">
+      Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>
+      &nbsp;·&nbsp;
+      License AED 900 &nbsp;·&nbsp; Policy AED 986
+    </p>
+  </footer>
+
+</body>
+</html>
