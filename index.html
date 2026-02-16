@@ -537,7 +537,7 @@
         document.getElementById('images-section').style.display =
           (currentFilter === 'files' || currentFilter === 'readme') ? 'none' : '';
         document.getElementById('files-section').style.display =
-          (currentFilter === 'files' || currentFilter === 'all') ? '' : 'none';
+          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' ? '' : 'none';
         document.getElementById('readme-section').style.display =
           currentFilter === 'readme' ? '' : 'none';
 
