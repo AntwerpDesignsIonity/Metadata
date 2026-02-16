@@ -88,6 +88,14 @@
 
     header .meta a:hover { text-decoration: underline; }
 
+    /* Header Logo */
+    header .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
     /* Navigation */
     nav {
       display: flex;
@@ -306,6 +314,19 @@
 
     footer a:hover { text-decoration: underline; }
 
+    /* Footer Logo */
+    footer .footer-logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+      display: inline-block;
+      opacity: 0.9;
+    }
+
+    footer .footer-logo:hover {
+      opacity: 1;
+    }
+
     /* Responsive */
     @media (max-width: 640px) {
       header h1 { font-size: 1.6rem; }
@@ -317,6 +338,7 @@
 <body>
 
   <header>
+    <img src="assets/Images/-transparrent-ionity-logo-edited - Copy.svg" alt="Ionity Today Logo" class="logo">
     <h1>Ionity Today</h1>
     <p>Global IoT, AI, Network &amp; IT — Asset Library</p>
     <div class="meta">
@@ -438,6 +460,9 @@
   </main>
 
   <footer>
+    <a href="https://www.ionity.today" target="_blank" rel="noopener">
+      <img src="assets/Images/-transparrent-ionity-logo-edited - Copy.svg" alt="Ionity Today Logo" class="footer-logo">
+    </a>
     <p>&copy; 2018–2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
     <p style="margin-top:0.4rem;">
       <a href="policy.html">Policy AED 986</a>
