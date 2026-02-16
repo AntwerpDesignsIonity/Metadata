@@ -18,7 +18,7 @@
 
 ---
 
-> ### ❝ Building Tomorrow, Today. Anything is Possible with God. ❞
+> ### ❝ Building Tomorrow. Anything is Possible with God. ❞
 
 ## 1. Identity (Author / Creator)
 * **Author / Creator:** Johan Wilhelm van Antwerp

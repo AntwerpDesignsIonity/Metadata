@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=60&duration=4000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1200&height=120&lines=IONITY+%7C+Antwerp+Designs;AI+%E2%80%A2+IoT+%E2%80%A2+HARDWARE;Building+Tomorrow%2C+Today" alt="Typing SVG" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=60&duration=4000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1200&height=120&lines=IONITY+%7C+Antwerp+Designs;AI+%E2%80%A2+IoT+%E2%80%A2+HARDWARE;Building+Tomorrow" alt="Typing SVG" width="100%" />
 </a>
 
 <br>
@@ -14,7 +14,7 @@
 
 ---
 
-> ### ❝ Building Tomorrow, Today. Anything is Possible with God. ❞
+> ### ❝ Building Tomorrow. Anything is Possible with God. ❞
 
 ## 📋 Table of Contents
 
@@ -215,7 +215,7 @@ For questions, licensing inquiries, or collaboration:
 
 ## 📜 Copyright & License
 
-© 2018–2026 Ionity Today | Antwerp Designs. All rights reserved.
+© 2018–2026 Ionity | Antwerp Designs. All rights reserved.
 
 See [License Documents](#11-license-documents) for full licensing information.
 
