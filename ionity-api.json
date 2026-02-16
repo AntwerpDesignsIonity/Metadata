@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-02-16T18:13:00Z",
+    "status": "Active",
+    "api_url": "https://antwerpdesignsionity.github.io/Metadata/ionity-api.json"
+  },
+  "identity": {
+    "name": "Ionity",
+    "legal_name": "Ionity (Pty) Ltd",
+    "founder": "Johan Wilhelm van Antwerp",
+    "tagline": "Building Tomorrow, Today. Anything is Possible with God.",
+    "established": 2018,
+    "transition_year": 2025,
+    "aliases": ["Antwerp Designs", "AEDI", "Antwerp Ecosystems Designs Ionity"]
+  },
+  "author": {
+    "name": "Johan Wilhelm van Antwerp",
+    "id": "9003135105083",
+    "orcid": "0009-0005-7181-0347",
+    "github": "AntwerpDesignsIonity",
+    "linkedin": "ionity",
+    "email": "johan@ionity.today",
+    "phone": "+27646999877"
+  },
+  "location": {
+    "country": "South Africa",
+    "region": "Gauteng",
+    "city": "Pretoria",
+    "currency": "ZAR",
+    "coordinates": {
+      "latitude": -25.7479,
+      "longitude": 28.2293
+    },
+    "global_intent": true
+  },
+  "capabilities": {
+    "hardware": [
+      "Power-Saving Units",
+      "Embedded Systems (Edge)",
+      "Custom PCB Design",
+      "IoT Hardware Development"
+    ],
+    "software": [
+      "Cloud Architecture",
+      "AI Inference Models",
+      "Cyber Security (F-iT)",
+      "Edge Computing Solutions"
+    ],
+    "industrial": [
+      "SCADA Systems",
+      "DAQ (Data Acquisition)",
+      "PdM (Predictive Maintenance)",
+      "CMS (Condition Monitoring Systems)"
+    ],
+    "core_markets": [
+      "Integrations",
+      "Cloud",
+      "EDGE",
+      "AI",
+      "IoT",
+      "Hardware",
+      "Software"
+    ]
+  },
+  "tech_stack": {
+    "specialization": "Hardware design and development, including power-saving units to support a better tomorrow",
+    "roles": [
+      "Ecosystems Solutionist",
+      "IoT Engineer",
+      "Toolmaker",
+      "Integration Specialist"
+    ],
+    "philosophy": "Precision, Performance, and Long-term Stability"
+  },
+  "governance": {
+    "policy_id": "AED 986",
+    "license_id": "AED 900",
+    "copyright": "© 2018–2026 Antwerp Designs | Ionity (Pty) Ltd",
+    "rights": "All rights reserved. TM²",
+    "license_type": "CC BY-NC-SA 4.0"
+  },
+  "endpoints": {
+    "primary": "https://www.ionity.today/",
+    "profile": "https://www.ionity.world/",
+    "api": "https://antwerpdesignsionity.github.io/Metadata/ionity-api.json",
+    "assets": "https://antwerpdesignsionity.github.io/Metadata/",
+    "github": "https://github.com/AntwerpDesignsIonity",
+    "github_org": "https://github.com/Antwerp-Ecosystem-Designs-Ionity",
+    "linkedin": "https://www.linkedin.com/in/ionity",
+    "facebook": "https://www.facebook.com/people/Ionity/61587016452256/"
+  },
+  "contact": {
+    "support": "johan@ionity.today",
+    "ai_support": "ai@ionity.today",
+    "services": "services@ionity.world",
+    "admin": "admin@ionity.today",
+    "personal": "johanvanantwerp@gmail.com",
+    "phone": "+27 64 699 9877"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/ionity",
+    "facebook": "https://www.facebook.com/people/Ionity/61587016452256/",
+    "github": "https://github.com/AntwerpDesignsIonity"
+  },
+  "seo": {
+    "title": "Ionity | AI, IoT & Power-Saving Hardware Ecosystems | Antwerp Designs",
+    "description": "Ionity designs secure Cloud, Edge, AI, and IoT ecosystems. We build power-saving hardware units, SCADA systems, and custom software for global automation.",
+    "keywords": [
+      "Ionity",
+      "Antwerp Designs",
+      "AEDI",
+      "IoT",
+      "AI",
+      "Cloud Systems",
+      "Edge Computing",
+      "Hardware Design",
+      "Power Saving Units",
+      "SCADA",
+      "PdM",
+      "CMS",
+      "DAQ",
+      "F-iT",
+      "South Africa",
+      "Johan van Antwerp"
+    ],
+    "theme_color": "#00c6ff",
+    "background_color": "#0d1b2a"
+  }
+}

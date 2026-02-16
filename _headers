@@ -1,0 +1,44 @@
+# Headers for enhanced security and SEO
+# For use with Cloudflare Pages, Netlify, or similar platforms
+
+/*
+  # Security Headers
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # CORS for API endpoints
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+  
+  # Cache Control
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# API endpoints - longer cache
+/ionity-api.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json
+
+/ionity.yaml
+  Cache-Control: public, max-age=86400
+  Content-Type: text/yaml
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+# Images - long cache
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Sitemap and robots
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain

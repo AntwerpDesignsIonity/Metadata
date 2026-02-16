@@ -1,0 +1,34 @@
+# Ionity Today - Robots.txt
+# https://www.ionity.today
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /index.html
+Allow: /manifest.json
+Allow: /ionity.yaml
+Allow: /ionity-api.json
+
+# Disallow private files
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /LICENSE
+
+# Sitemaps
+Sitemap: https://antwerpdesignsionity.github.io/Metadata/sitemap.xml
+
+# Crawl-delay for good citizenship
+Crawl-delay: 1
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
