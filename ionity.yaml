@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------
+# IONITY / ANTWERP DESIGNS — OFFICIAL METADATA (MASTER)
+# Focus: IoT, AI, Cloud, Hardware, Power-Saving Units
+# ------------------------------------------------------------------
+
+meta:
+  generated_at: 2026-02-16
+  version: 1.0.0
+  status: "Active"
+  security_level: "Encrypted"
+
+identity:
+  name: "Ionity"
+  legal_name: "Ionity (Pty) Ltd"
+  founder: "Johan Wilhelm van Antwerp"
+  tagline: "Building Tomorrow, Today. Anything is Possible with God."
+  established: 2018
+  transition_year: 2025
+
+location:
+  region: "South Africa"
+  city: "Pretoria"
+  province: "Gauteng"
+  currency: "ZAR"
+  global_intent: true
+
+tech_stack:
+  hardware:
+    - "Power-Saving Units"
+    - "Embedded Systems (Edge)"
+    - "Custom PCB Design"
+  software:
+    - "Cloud Architecture"
+    - "AI Inference Models"
+    - "Cyber Security (F-iT)"
+  industrial:
+    - "SCADA"
+    - "DAQ (Data Acquisition)"
+    - "PdM (Predictive Maintenance)"
+
+governance:
+  policy_id: "AED 986"
+  license_id: "AED 900"
+  copyright: "© 2018–2026 Antwerp Designs | Ionity"
+  rights: "All rights reserved. TM²"
+
+endpoints:
+  web_main: "https://www.ionity.today/"
+  web_profile: "https://www.ionity.world/"
+  api_json: "https://antwerpdesignsionity.github.io/Metadata/ionity-api.json"
+  github: "https://github.com/AntwerpDesignsIonity"
+
+contact:
+  support: "johan@ionity.today"
+  services: "services@ionity.world"
+  emergency: "+27 64 699 9877"
