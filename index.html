@@ -332,6 +332,7 @@
     <a href="#jpeg" data-filter="jpeg">JPEG</a>
     <a href="#files" data-filter="files">Other Files</a>
     <a href="#readme" data-filter="readme">README</a>
+    <a href="#metadata" data-filter="metadata">METADATA</a>
     <a href="#links" data-filter="links">Links</a>
     <a href="policy.html">Policy</a>
     <a href="license.html">License</a>
@@ -397,6 +398,46 @@
       </div>
     </section>
 
+    <!-- METADATA Section -->
+    <section id="metadata-section" style="display: none;">
+      <h2>METADATA</h2>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1.1rem;">Our Metadata</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.8;">
+            The Ionity metadata repository contains comprehensive information about our AI, IoT, and hardware ecosystems. 
+            This includes brand assets, technical documentation, policy documents, and complete organizational metadata.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.8;">
+            Our metadata is structured to provide complete transparency and accessibility for developers, partners, and stakeholders. 
+            All metadata files are available for download and include detailed information about Ionity's global presence, 
+            technical capabilities, and legal framework.
+          </p>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <a href="metadata.md" target="_blank" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">View Metadata</a>
+            <a href="metadata.md" download class="btn-raw" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--accent);">Download Metadata</a>
+            <a href="https://www.ionity.today" target="_blank" rel="noopener" class="btn-view" style="display: inline-block; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none;">Visit ionity.today</a>
+          </div>
+        </div>
+        
+        <div style="border-top: 1px solid var(--border); padding-top: 1.5rem;">
+          <h4 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1rem;">Metadata Includes:</h4>
+          <ul style="color: var(--text-muted); margin: 0 0 0 1.5rem; line-height: 2;">
+            <li>Identity and organizational information</li>
+            <li>Brand and company overview</li>
+            <li>Markets, capabilities, and technology details</li>
+            <li>Website presence and contact information</li>
+            <li>Legal rights and licensing framework</li>
+            <li>Developer resources and API documentation</li>
+            <li>Repository structure and asset categories</li>
+          </ul>
+          <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">
+            <strong>More Information:</strong> Visit <a href="https://www.ionity.today" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">www.ionity.today</a> for complete details.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Links Section -->
     <section id="links-section" style="display: none;">
       <h2>License and Policy Documents</h2>
@@ -440,6 +481,8 @@
   <footer>
     <p>&copy; 2018–2026 <a href="https://www.ionity.today" target="_blank" rel="noopener">Ionity Today</a>. All rights reserved.</p>
     <p style="margin-top:0.4rem;">
+      <a href="https://www.ionity.today" target="_blank" rel="noopener">www.ionity.today</a>
+      &nbsp;·&nbsp;
       <a href="policy.html">Policy AED 986</a>
       &nbsp;·&nbsp;
       <a href="license.html">License AED 900</a>
@@ -580,11 +623,13 @@
 
         // Toggle sections
         document.getElementById('images-section').style.display =
-          (currentFilter === 'files' || currentFilter === 'readme' || currentFilter === 'links') ? 'none' : '';
+          (currentFilter === 'files' || currentFilter === 'readme' || currentFilter === 'metadata' || currentFilter === 'links') ? 'none' : '';
         document.getElementById('files-section').style.display =
-          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' && currentFilter !== 'links' ? '' : 'none';
+          (currentFilter === 'files' || currentFilter === 'all') && currentFilter !== 'readme' && currentFilter !== 'metadata' && currentFilter !== 'links' ? '' : 'none';
         document.getElementById('readme-section').style.display =
           currentFilter === 'readme' ? '' : 'none';
+        document.getElementById('metadata-section').style.display =
+          currentFilter === 'metadata' ? '' : 'none';
         document.getElementById('links-section').style.display =
           currentFilter === 'links' ? '' : 'none';
 
