@@ -50,6 +50,32 @@
       color: var(--text);
       line-height: 1.6;
       min-height: 100vh;
+      position: relative;
+    }
+
+    /* Backdrop Pattern */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(45deg, rgba(0, 198, 255, 0.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 198, 255, 0.03) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0, 198, 255, 0.03) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0, 198, 255, 0.03) 75%);
+      background-size: 60px 60px;
+      background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    header, nav, main, footer {
+      position: relative;
+      z-index: 1;
     }
 
     /* Header */
@@ -104,6 +130,18 @@
       padding: 1rem;
       flex-wrap: wrap;
       background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+
+    nav .nav-heading {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 0.5rem 0;
+      padding: 0.4rem 0;
+      width: 100%;
+      text-align: center;
       border-bottom: 1px solid var(--border);
     }
 
@@ -348,6 +386,7 @@
   </header>
 
   <nav>
+    <h2 class="nav-heading">Browse Assets</h2>
     <a href="#all" class="active" data-filter="all">All Assets</a>
     <a href="#png" data-filter="png">PNG</a>
     <a href="#svg" data-filter="svg">SVG</a>
@@ -358,6 +397,8 @@
     <a href="#links" data-filter="links">Links</a>
     <a href="policy.html">Policy</a>
     <a href="license.html">License</a>
+    <a href="https://github.com/AntwerpDesignsIonity/Metadata" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/AntwerpDesignsIonity/Metadata/wiki/META-DATA-Complete" target="_blank" rel="noopener">Wiki</a>
   </nav>
 
   <main>
