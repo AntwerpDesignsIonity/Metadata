@@ -11,7 +11,7 @@
 ## Author
 
 - **Johan Wilhelm van Antwerp**
-- ORCID (ORCHID): [0009-0005-7181-0347](https://orcid.org/0009-0005-7181-0347)
+- ORCID: [0009-0005-7181-0347](https://orcid.org/0009-0005-7181-0347)
 
 ## Related Pages
 
