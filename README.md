@@ -29,6 +29,7 @@
 - [9. Asset Categories](#9-asset-categories)
 - [10. Quick Start](#10-quick-start--github-pages)
 - [11. License Documents](#11-license-documents)
+- [12. Wiki](#12-wiki)
 
 ---
 
@@ -87,7 +88,7 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 * **Email:** `johan@ionity.today` | `ai@ionity.today`
 * **Admin:** `services@ionity.world` | `admin@ionity.today`
 * **Personal:** `johanvanantwerp@gmail.com`
-* **Phone:** `+27 64 699 9877`
+* **Phone:** `+27 646999877`
 * **Location:** Pretoria, Gauteng, South Africa (ZAR)
 * **Internal Note:** IP `41.150.***.**` (Private)
 
@@ -188,9 +189,19 @@ All license and policy documents are available both online and for download:
 - [View Online](Version%207.3.1%20%20-%20Active,%20Policy%20986%20AED%20-%20Metadata%20-%20%20Antwerp%20Designs%20-%20Johan%20Wilhelm%20van%20Antwerp%20-%20Rustenburg%20&%20Centurion%20-%20GLOBAL%20INTENT%20-%209003135105083txt%20(1).pdf)
 - [Download PDF](Version%207.3.1%20%20-%20Active,%20Policy%20986%20AED%20-%20Metadata%20-%20%20Antwerp%20Designs%20-%20Johan%20Wilhelm%20van%20Antwerp%20-%20Rustenburg%20&%20Centurion%20-%20GLOBAL%20INTENT%20-%209003135105083txt%20(1).pdf)
 
+### 📄 License-Ionity Global.txt
+**Ionity.Global licensing update file**
+- [View Online](assets/Images/License-Ionity%20Global.txt)
+- [Download TXT](assets/Images/License-Ionity%20Global.txt)
+
 > **Note:** All documents can also be accessed through the "Links" tab on the main asset gallery page.
 
 ---
+
+## 12. Wiki
+
+- [Repository Wiki Page](wiki.md)
+- [GitHub Wiki](https://github.com/AntwerpDesignsIonity/Metadata/wiki/META-DATA-Complete)
 
 ## 🚀 Browse Assets Online
 
@@ -207,7 +218,7 @@ Visit the **[Live Asset Gallery](#)** to:
 
 For questions, licensing inquiries, or collaboration:
 
-- **Email:** `johan@ionity.today`
+- **Email:** `johan@ionity.today` | `ai@ionity.today`
 - **Website:** [ionity.today](https://www.ionity.today)
 - **LinkedIn:** [Johan van Antwerp](https://www.linkedin.com/in/ionity)
 

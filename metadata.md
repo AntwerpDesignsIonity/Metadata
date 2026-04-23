@@ -60,6 +60,7 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 | :--- | :--- |
 | **Primary Hub** | [https://www.ionity.today/](https://www.ionity.today/) |
 | **Profile** | [https://www.ionity.world/](https://www.ionity.world/) |
+| **Wiki** | [Metadata Wiki](wiki.md) |
 | **LinkedIn** | [linkedin.com/in/ionity](https://www.linkedin.com/in/ionity) |
 | **Facebook** | [Ionity Official](https://www.facebook.com/people/Ionity/61587016452256/) |
 | **GitHub Org** | [Antwerp-Ecosystem-Designs-Ionity](https://github.com/Antwerp-Ecosystem-Designs-Ionity) |
@@ -70,7 +71,7 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 * **Email:** `johan@ionity.today` | `ai@ionity.today`
 * **Admin:** `services@ionity.world` | `admin@ionity.today`
 * **Personal:** `johanvanantwerp@gmail.com`
-* **Phone:** `+27 64 699 9877`
+* **Phone:** `+27 646999877`
 * **Location:** Pretoria, Gauteng, South Africa (ZAR)
 * **Internal Note:** IP `41.150.***.**` (Private)
 
@@ -79,7 +80,7 @@ Ionity / Antwerp Designs designs and builds secure systems that connect devices,
 ## 6. Legal & Rights
 * **Signature:** "Antwerp Designs | Ionity or Ionity (Pty) Ltd"
 * **Policy:** AED 986 (Policy 986)
-* **License:** AED 900 (Hardware & Software)
+* **License:** AED 900 (Hardware & Software) + License-Ionity Global
 * **Rights:** All rights reserved | TM² | CC BY-NC-SA 4.0 | 2018–2026
 
 ---

@@ -32,6 +32,7 @@
           <rdf:li>IT</rdf:li>
           <rdf:li>Branding</rdf:li>
           <rdf:li>Assets</rdf:li>
+          <rdf:li>License-Ionity Global</rdf:li>
         </rdf:Bag>
       </dc:subject>
       <dc:rights>
@@ -43,7 +44,7 @@
       <!-- XMP Basic -->
       <xmp:CreatorTool>Ionity Assets</xmp:CreatorTool>
       <xmp:CreateDate>2026-02-16</xmp:CreateDate>
-      <xmp:ModifyDate>2026-02-16</xmp:ModifyDate>
+      <xmp:ModifyDate>2026-04-23</xmp:ModifyDate>
 
       <!-- XMP Rights -->
       <xmpRights:WebStatement>https://www.ionity.today</xmpRights:WebStatement>
