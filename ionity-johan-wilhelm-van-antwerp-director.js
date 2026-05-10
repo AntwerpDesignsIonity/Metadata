@@ -2,7 +2,7 @@
  * IONITY (ANTWERP DESIGNS) - MASTER CONFIGURATION
  * Context: IoT, AI, Cloud, Hardware, Power-Saving Units
  * Author: Johan Wilhelm van Antwerp
- * Updated: 2026-02-16
+ * Updated: 2026-04-23
  */
 
 const IonityConfig = {
@@ -14,6 +14,7 @@ const IonityConfig = {
     ids: {
       registry: "9003135105083",
       orcid: "0009-0005-7181-0347",
+      orcid_url: "https://orcid.org/0009-0005-7181-0347",
       policy: "AED 986",
       license: "AED 900"
     }
@@ -51,7 +52,7 @@ const IonityConfig = {
   contact: {
     email: "johan@ionity.today",
     ai_support: "ai@ionity.today",
-    phone: "+27 64 699 9877"
+    phone: "+27 646999877"
   },
 
   // Helper to generate SEO tags programmatically

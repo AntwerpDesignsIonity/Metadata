@@ -4,8 +4,8 @@
 # ------------------------------------------------------------------
 
 meta:
-  generated_at: 2026-02-16
-  version: 1.0.0
+  generated_at: 2026-04-23
+  version: 1.0.1
   status: "Active"
   security_level: "Encrypted"
 
@@ -41,6 +41,7 @@ tech_stack:
 governance:
   policy_id: "AED 986"
   license_id: "AED 900"
+  license_global_file: "assets/Images/License-Ionity Global.txt"
   copyright: "© 2018–2026 Antwerp Designs | Ionity"
   rights: "All rights reserved. TM²"
 
@@ -52,5 +53,6 @@ endpoints:
 
 contact:
   support: "johan@ionity.today"
+  ai_support: "ai@ionity.today"
   services: "services@ionity.world"
-  emergency: "+27 64 699 9877"
+  emergency: "+27 646999877"
